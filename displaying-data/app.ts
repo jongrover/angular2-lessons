@@ -11,7 +11,7 @@ class FriendsService {
 
 //Controller
 @Component({
-  selector: 'display',
+  selector: 'app',
   appInjector: [FriendsService]
 })
 @View({

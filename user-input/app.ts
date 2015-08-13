@@ -12,7 +12,7 @@ import {Component, View, bootstrap, NgFor} from 'angular2/angular2';
         {{ todo }}
       </li>
     </ul>
-    <input #todotext>
+    <input #todotext (keyup)="doneTyping($event)">
     <button (click)="addTodo(todotext.value)">Add ToDo</button>
   `,
   directives: [NgFor]
@@ -27,7 +27,7 @@ class ToDoList {
   addTodo(todo: string) {
     this.todos.push(todo);
   }
-  
+
   doneTyping($event) {
     if($event.which === 13) {
       this.addTodo($event.target.value);

@@ -29,7 +29,7 @@ var ToDoList = (function () {
             selector: 'todo'
         }),
         angular2_1.View({
-            template: "\n    <ul>\n      <li *ng-for=\"#todo of todos\">\n        {{ todo }}\n      </li>\n    </ul>\n    <input #todotext>\n    <button (click)=\"addTodo(todotext.value)\">Add ToDo</button>\n  ",
+            template: "\n    <ul>\n      <li *ng-for=\"#todo of todos\">\n        {{ todo }}\n      </li>\n    </ul>\n    <input #todotext (keyup)=\"doneTyping($event)\">\n    <button (click)=\"addTodo(todotext.value)\">Add ToDo</button>\n  ",
             directives: [angular2_1.NgFor]
         }), 
         __metadata('design:paramtypes', [])
