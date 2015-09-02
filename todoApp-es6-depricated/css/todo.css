@@ -1,0 +1,14 @@
+@import url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.container{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 200px;
+}
+.done{
+  text-decoration: line-through;
+  color : #999999;
+}
+.bottom-offset{
+  margin-bottom: 20px;
+}
