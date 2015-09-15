@@ -12,7 +12,7 @@ import {TodoStore} from 'services/TodoStore';
 })
 class TodoApp {
 
-  
+   todoStore: Array<any>;
 
   constructor(todoStore: TodoStore) {
     this.todoStore = todoStore;
@@ -29,3 +29,14 @@ class TodoApp {
 }
 
 bootstrap(TodoApp);
+
+
+// class DisplayComponent {
+//   myName: string;
+//   names:Array<string>;
+//   constructor(friendsService: FriendsService) {
+//     this.myName = "Alice";
+//     this.names = friendsService.names;  
+//   }
+// }
+// bootstrap(DisplayComponent);

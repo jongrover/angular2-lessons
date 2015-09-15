@@ -39,3 +39,12 @@ var TodoApp = (function () {
     return TodoApp;
 })();
 angular2_1.bootstrap(TodoApp);
+// class DisplayComponent {
+//   myName: string;
+//   names:Array<string>;
+//   constructor(friendsService: FriendsService) {
+//     this.myName = "Alice";
+//     this.names = friendsService.names;  
+//   }
+// }
+// bootstrap(DisplayComponent); 
