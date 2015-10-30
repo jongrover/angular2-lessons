@@ -4,3 +4,4 @@ var Person = (function () {
     }
     return Person;
 })();
+exports.Person = Person;

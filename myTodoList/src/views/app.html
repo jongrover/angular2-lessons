@@ -1,0 +1,14 @@
+<div>
+  <input type="text" #listName>
+  <button (click)="addList(listName)">Add List</button>
+</div>
+<!-- <div>
+  <input type="text" #taskName>
+  <select #selectedList>
+    <option *ng-for="#list of lists">{{ list.name }}</option>
+  </select>
+  <button (click)="addTask(taskName, selectedList)">Add Task</button>
+</div> -->
+<div *ng-for="#list of lists">
+  <h2>{{ list.name }}</h2>
+</div>
