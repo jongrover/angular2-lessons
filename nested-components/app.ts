@@ -8,8 +8,8 @@ import { Component, View, bootstrap } from 'angular2/angular2';
 @View({
   template: `<p>Child Insert</p>`
 })
-class Child {
-}
+class Child { 
+} // note that the Child Component must be included before the App component can make use of it as a directive for its view.
 
 @Component({
   selector: 'app'
