@@ -1,0 +1,5 @@
+#newtask, #newlist {
+  border: 1px solid black;
+  float: left;
+  padding: 20px;
+}

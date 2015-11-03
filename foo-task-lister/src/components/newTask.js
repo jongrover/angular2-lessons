@@ -12,12 +12,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /// <reference path="../../typings/angular2/angular2.d.ts" />
 var angular2_1 = require('angular2/angular2');
 // model dependencies
+var list_1 = require('../models/list');
 var task_1 = require('../models/task');
 var NewTask = (function () {
     function NewTask() {
+        this.lists = list_1.List.all;
     }
-    NewTask.prototype.createTask = function (description) {
-        this.task = new task_1.Task(description);
+    NewTask.prototype.createTask = function (description, list) {
+        this.task = new task_1.Task(description, list);
         description.value = "";
     };
     NewTask = __decorate([
@@ -25,7 +27,8 @@ var NewTask = (function () {
             selector: 'newtask'
         }),
         angular2_1.View({
-            templateUrl: 'src/views/task.html'
+            templateUrl: 'src/views/newTask.html',
+            directives: [angular2_1.NgFor]
         }), 
         __metadata('design:paramtypes', [])
     ], NewTask);
