@@ -11,23 +11,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 /// <reference path="../../typings/angular2/angular2.d.ts" />
 var angular2_1 = require('angular2/angular2');
-//child components
-var newList_1 = require('./newList');
-var newTask_1 = require('./newTask');
-var displayList_1 = require('./displayList');
-var App = (function () {
-    function App() {
+//model dependencies
+var list_1 = require('../models/list');
+var DisplayList = (function () {
+    function DisplayList() {
+        this.lists = list_1.List.all;
     }
-    App = __decorate([
+    DisplayList.prototype.destroy = function (obj) {
+        list_1.List.all[obj.list].tasks.splice(obj.task, 1);
+    };
+    DisplayList = __decorate([
         angular2_1.Component({
-            selector: 'app'
+            selector: 'displaylist'
         }),
         angular2_1.View({
-            templateUrl: 'src/views/app.html',
-            directives: [newList_1.NewList, newTask_1.NewTask, displayList_1.DisplayList]
+            templateUrl: 'src/views/displayList.html',
+            directives: [angular2_1.NgFor]
         }), 
         __metadata('design:paramtypes', [])
-    ], App);
-    return App;
+    ], DisplayList);
+    return DisplayList;
 })();
-angular2_1.bootstrap(App);
+exports.DisplayList = DisplayList;

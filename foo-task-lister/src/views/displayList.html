@@ -1,0 +1,6 @@
+<section class="list" *ng-for="#list of lists; var listindex=index">
+  <h2>{{ list.name }}</h2>
+  <ol>
+    <li *ng-for="#task of list.tasks; var taskindex=index">{{ task.description }} <button (click)="destroy({list: listindex, task: taskindex})">x</button></li>
+  </ol>
+</section>

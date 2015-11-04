@@ -3,3 +3,9 @@
   float: left;
   padding: 20px;
 }
+
+.list {
+  clear: both;
+  border: 1px solid black;
+  padding: 20px;
+}
