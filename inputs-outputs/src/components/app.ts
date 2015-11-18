@@ -4,19 +4,18 @@ import {Foo} from './foo';
 
 @Component({
   selector: 'app',
-  inputs: ['title']
 })
 @View({
+  directives: [Foo],
   template: `
     <p>{{ greet }}</p>
-    <foo [title]="janitor"></foo>
-  `,
-  directives: [Foo]
+    <foo></foo>
+   `
 })
 class App {
   greet: string;
   constructor(){
-    this.greet = "Hello"; //private input (property)
+    this.greet = "Hello"; //private input (property) available to only this component.
   }
 }
 

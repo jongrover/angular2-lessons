@@ -14,16 +14,15 @@ var angular2_1 = require('angular2/angular2');
 var foo_1 = require('./foo');
 var App = (function () {
     function App() {
-        this.greet = "Hello"; //private input (property)
+        this.greet = "Hello"; //private input (property) available to only this component.
     }
     App = __decorate([
         angular2_1.Component({
             selector: 'app',
-            inputs: ['title']
         }),
         angular2_1.View({
-            template: "\n    <p>{{ greet }}</p>\n    <foo [title]=\"janitor\"></foo>\n  ",
-            directives: [foo_1.Foo]
+            directives: [foo_1.Foo],
+            template: "\n    <p>{{ greet }}</p>\n    <foo></foo>\n   "
         }), 
         __metadata('design:paramtypes', [])
     ], App);

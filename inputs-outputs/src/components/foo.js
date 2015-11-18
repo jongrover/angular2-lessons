@@ -12,16 +12,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 ///<reference path="../../typings/angular2/angular2.d.ts"/>
 var angular2_1 = require('angular2/angular2');
 var Foo = (function () {
-    //title: string;
     function Foo() {
-        //this.title = "cowboy";
+        this.title = "cowboy";
     }
     Foo = __decorate([
         angular2_1.Component({
             selector: 'foo'
         }),
         angular2_1.View({
-            template: "\n    <p>{{title}}</p>\n    "
+            template: '<p>{{ title }}</p>'
         }), 
         __metadata('design:paramtypes', [])
     ], Foo);

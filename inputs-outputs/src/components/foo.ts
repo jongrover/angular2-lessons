@@ -5,13 +5,11 @@ import {Component, View, bootstrap} from 'angular2/angular2';
   selector: 'foo'
 })
 @View({
-  template: `
-    <p>{{title}}</p>
-    `
+  template: '<p>{{ title }}</p>'
 })
 export class Foo {
-  //title: string;
+  title: string;
   constructor(){
-    //this.title = "cowboy";
+    this.title = "cowboy";
   }
 }
