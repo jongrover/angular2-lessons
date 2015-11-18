@@ -12,6 +12,7 @@ import { List } from '../models/list';
 })
 export class DisplayList {
   lists: Array<List>;
+  bar: number;
   constructor(){
     this.lists = List.all;
   }
