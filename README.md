@@ -2,7 +2,7 @@
 
 Examples from [Angular.io](https://angular.io/docs)
 
-## Configuration
+## Configuration (depricated, skip to Updated/Revised Instructions Below)
 
 First install Node and NPM, then:
 
@@ -24,7 +24,7 @@ Run HTTP-Server:
 
 $ `http-server`
 
-## Updated Instructions Nov 2015
+## Updated/Revised Instructions Nov 2015
 
 Reccomended NPM 3.5.0 and Node v5.1.0 if you have lesser version it is reccomended you first install [NVM](https://github.com/creationix/nvm)
 
@@ -46,3 +46,4 @@ $ `npm i angular2@2.0.0-alpha.44 systemjs@0.19.2 --save --save-exact`
 
 $ `npm i typescript live-server --save-dev`
 
+Full instructions at [https://angular.io/docs/ts/latest/quickstart.html#revise-the-application-project-structure](https://angular.io/docs/ts/latest/quickstart.html#revise-the-application-project-structure)
