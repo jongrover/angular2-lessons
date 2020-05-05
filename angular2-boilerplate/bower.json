@@ -29,7 +29,7 @@
     "typings"
   ],
   "devDependencies": {
-    "bootstrap": "~3.3.5",
+    "bootstrap": "~> 3.4.0",
     "traceur-runtime": "~0.0.90"
   }
 }
